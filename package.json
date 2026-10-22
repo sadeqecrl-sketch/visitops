@@ -1,0 +1,16 @@
+{
+  "name": "visitops",
+  "private": true,
+  "type": "module",
+  "version": "2.1.0",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "dev": "netlify dev",
+    "deploy": "netlify deploy --prod",
+    "check": "node scripts/check.mjs",
+    "selftest": "node scripts/selftest.mjs && node scripts/selftest-open.mjs && node scripts/selftest-easy.mjs"
+  },
+  "dependencies": {
+    "@netlify/blobs": ">=8.2.0"
+  }
+}
